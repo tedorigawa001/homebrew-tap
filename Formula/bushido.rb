@@ -1,25 +1,25 @@
 class Bushido < Formula
   desc "Bushido (bdo) - High-performance CLI proxy to minimize LLM token consumption. Fork of rtk (Rust Token Killer)."
-  homepage "https://github.com/tedorigawa001/TokenReductionTool"
-  version "0.44.4"
+  homepage "https://github.com/tedorigawa001/TokenReductionTool-BDO"
+  version "0.44.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/tedorigawa001/TokenReductionTool/releases/download/v0.44.4/bushido-aarch64-apple-darwin.tar.xz"
-      sha256 "54e748c7ef30fb3b8cfaaf13c2ae921f07dbf64e874b352ff26abfe60522c9b0"
+      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.44.5/bushido-aarch64-apple-darwin.tar.xz"
+      sha256 "30ad998bcb1e73bc85588ab514ec82f2733e6212cedca9ec069ae59a7b34b419"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tedorigawa001/TokenReductionTool/releases/download/v0.44.4/bushido-x86_64-apple-darwin.tar.xz"
-      sha256 "64818be8ab2deb521d77ae401d5eca0bb48c7712f8bef77924b822678346e2e9"
+      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.44.5/bushido-x86_64-apple-darwin.tar.xz"
+      sha256 "60b7ec1ad17825b59e115eca5d87ac0294ec4a31c1f806448b8870f9e97cb02b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/tedorigawa001/TokenReductionTool/releases/download/v0.44.4/bushido-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "7ec766d06324fa94fe284fe50df46e945a9704bffa0de7729b674eecd9377388"
+      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.44.5/bushido-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "c6016dcec713a8926ded9279f337dca739fba263e3c474360d41fda7481c2500"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tedorigawa001/TokenReductionTool/releases/download/v0.44.4/bushido-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "4d4a48912cbf7664c7a11ce7c0201ea1c3300741acde6dc874703231ccb353ea"
+      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.44.5/bushido-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "d78a93b40c357b2dde64fd37e34e5f22c5a5fe764563ea1a4ef07392cccd00d2"
     end
   end
   license "Apache-2.0"
