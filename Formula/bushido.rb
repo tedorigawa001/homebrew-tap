@@ -1,25 +1,25 @@
 class Bushido < Formula
   desc "High-performance CLI proxy that minimizes LLM token consumption (fork of rtk)."
   homepage "https://github.com/tedorigawa001/TokenReductionTool-BDO"
-  version "0.44.10"
+  version "0.44.11"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.44.10/bushido-aarch64-apple-darwin.tar.xz"
-      sha256 "ceacc43e21d5fd7a823962512243a484f14255f14cc956c5fb394cdb726ff9e9"
+      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.44.11/bushido-aarch64-apple-darwin.tar.xz"
+      sha256 "38274e79c86e2e1fd0f89cd23bcc8af2bf2c772e013d358dffb112e9d67ea975"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.44.10/bushido-x86_64-apple-darwin.tar.xz"
-      sha256 "dca93eea22457cf9a84a332a087930b876f967d74cf8e0cdfed2994627643b73"
+      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.44.11/bushido-x86_64-apple-darwin.tar.xz"
+      sha256 "61bad53df16d2511a47c2fe2feab8e6dee001ec88a654b3c963dc3425531adc4"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.44.10/bushido-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "c04013e36594f38b20eff00410c62fa623357d9072959b16797f0e15a94ce752"
+      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.44.11/bushido-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "38c54b73b20b94fb2a528b7c0a8aca6105cb9afec8f33fd716b549da5ff9539f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.44.10/bushido-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e84f1db50a49c01b5301926f902fbdde62325acb055f75645701e63ca80e5fc4"
+      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.44.11/bushido-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b98dc2ebe9a3253f788e50a99cc2d0fe34cafc1379e4f29196fa401e8d84daad"
     end
   end
   license "Apache-2.0"
