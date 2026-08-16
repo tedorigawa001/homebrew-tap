@@ -1,25 +1,25 @@
 class Bushido < Formula
   desc "High-performance CLI proxy that minimizes LLM token consumption (fork of rtk)."
   homepage "https://github.com/tedorigawa001/TokenReductionTool-BDO"
-  version "0.44.11"
+  version "0.44.12"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.44.11/bushido-aarch64-apple-darwin.tar.xz"
-      sha256 "38274e79c86e2e1fd0f89cd23bcc8af2bf2c772e013d358dffb112e9d67ea975"
+      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.44.12/bushido-aarch64-apple-darwin.tar.xz"
+      sha256 "ae1196be85f5ed636597740ff7f0c7ae61212ed1c485b4b5375880a8a0d520cd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.44.11/bushido-x86_64-apple-darwin.tar.xz"
-      sha256 "61bad53df16d2511a47c2fe2feab8e6dee001ec88a654b3c963dc3425531adc4"
+      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.44.12/bushido-x86_64-apple-darwin.tar.xz"
+      sha256 "2a41dc2c5fd68aa7784af819aa8df2284ae16750a2320fa172bbac70aeb95f22"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.44.11/bushido-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "38c54b73b20b94fb2a528b7c0a8aca6105cb9afec8f33fd716b549da5ff9539f"
+      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.44.12/bushido-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "5adbf3f53f90dad7711d038d8752b2c06de081c628b3e29925345d6ce33015f6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.44.11/bushido-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "b98dc2ebe9a3253f788e50a99cc2d0fe34cafc1379e4f29196fa401e8d84daad"
+      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.44.12/bushido-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "6fbf30103be1967e5d5487338479d3c70d1c87bd53a0468ef6c2cb4bb3c77a9e"
     end
   end
   license "Apache-2.0"
@@ -48,10 +48,18 @@ class Bushido < Formula
   end
 
   def install
-    bin.install "bdo" if OS.mac? && Hardware::CPU.arm?
-    bin.install "bdo" if OS.mac? && Hardware::CPU.intel?
-    bin.install "bdo" if OS.linux? && Hardware::CPU.arm?
-    bin.install "bdo" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "bdo"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "bdo"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "bdo"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "bdo"
+    end
 
     install_binary_aliases!
 
