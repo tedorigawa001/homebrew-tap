@@ -1,25 +1,25 @@
 class Bushido < Formula
   desc "High-performance CLI proxy that minimizes LLM token consumption (fork of rtk)."
   homepage "https://github.com/tedorigawa001/TokenReductionTool-BDO"
-  version "0.50.6"
+  version "0.50.7"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.50.6/bushido-aarch64-apple-darwin.tar.xz"
-      sha256 "6ed4ef1ac0a833a1eefb700b53869eeaf170bb0fe62010190c63781331c0643e"
+      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.50.7/bushido-aarch64-apple-darwin.tar.xz"
+      sha256 "4bda9965aa76c5b74d2176923b4385dac47728dc26127853354b2b86efb07872"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.50.6/bushido-x86_64-apple-darwin.tar.xz"
-      sha256 "250537d3f72b0b422ff6666898e69e8300d75aa8f44f8b8ce320185ffe3d55ef"
+      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.50.7/bushido-x86_64-apple-darwin.tar.xz"
+      sha256 "e39c335a85f14d06537c5c4347e461d1b910157b3fdf8ed888e4e40fe0469281"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.50.6/bushido-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "780c9d64a20ea7a47364c040794c468b5c71636e9b6eb672b62cbdec671c0078"
+      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.50.7/bushido-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "3d9672aa2154430778575446a07d05d1e0cf9f1169843ddc4cedde546aa64900"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.50.6/bushido-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "56bbbfc5b1b4bd5d71a7ae19ed23ba91fa99d66e31d46762f85969220dc467fa"
+      url "https://github.com/tedorigawa001/TokenReductionTool-BDO/releases/download/v0.50.7/bushido-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "4b760c6e01861254a38b658c062be2d957397d59964841105696c4b9a2150c38"
     end
   end
   license "Apache-2.0"
